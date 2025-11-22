@@ -1,0 +1,344 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>La Bella — Modern Restaurant</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header class="site-header">
+			<div class="container header-inner">
+				<!-- mobile menu toggle -->
+				<button id="menu-toggle" class="menu-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Open menu">
+					<span class="hamburger" aria-hidden="true"></span>
+				</button>
+				<a class="brand" href="#">
+					<span class="logo" aria-hidden="true"></span>
+					<span class="brand-text">La Bella</span>
+				</a>
+				<nav id="main-nav" class="main-nav" aria-label="Primary">
+					<a href="#about">About</a>
+					<a href="#menu">Menu</a>
+					<a href="#reservation">Reserve</a>
+					<a href="#contact">Contact</a>
+				</nav>
+				<a class="btn btn-cta" href="#reservation">Reserve</a>
+			</div>
+		</header>
+
+		<main>
+			<section class="hero">
+				<div class="container hero-inner">
+					<div class="hero-copy">
+						<h1>Seasonal Ingredients. Timeless Flavor.</h1>
+						<p class="lead">Enjoy thoughtfully composed plates in a warm, modern setting. Local ingredients, excellent wine, and friendly service.</p>
+						<p class="hero-tagline">Mediterranean-inspired menu • Sourced from local farms • Small-batch desserts</p>
+						<p class="hero-extra">Join us for an evening of thoughtfully paired plates and natural wines — reservations recommended for weekends. Private dining and group menus available.</p>
+						<div class="hero-actions">
+							<a class="btn btn-primary" href="#reservation">Reserve a table</a>
+							<a class="btn btn-link" href="#menu">See the menu</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="menu" class="container menu-section">
+				<h2>Menu — Seasonal & Favorites</h2>
+				<p class="muted">Explore our selection. Click a dish to learn more or reserve a table.</p>
+
+				<div class="grid cards" aria-live="polite">
+					<!-- 20 menu items -->
+					<article class="card" data-index="0">
+						<img class="card-thumb" src="images/menu1.jpg" alt="Seared Salmon" />
+						<div class="card-body">
+							<h3>Seared Salmon</h3>
+							<p class="muted">Lemon-herb butter, roasted vegetables.</p>
+						</div>
+						<div class="card-price">$22</div>
+						<button>Buy Now</button>
+					</article>
+
+					<article class="card" data-index="1">
+						<img class="card-thumb" src="images/menu2.webp" alt="Handmade Gnocchi" />
+						<div class="card-body">
+							<h3>Handmade Gnocchi</h3>
+							<p class="muted">Sage brown butter and shaved parmesan.</p>
+						</div>
+						<div class="card-price">$18</div>
+						<button>Buy Now</button>
+					</article>
+
+					<article class="card" data-index="2">
+						<img class="card-thumb" src="images/menu3.jpg" alt="Roast Chicken" />
+						<div class="card-body">
+							<h3>Roast Chicken</h3>
+							<p class="muted">Garlic, thyme, pan jus, seasonal sides.</p>
+						</div>
+						<div class="card-price">$20</div>
+						<button>Buy Now</button>
+					</article>
+
+					<article class="card" data-index="3">
+						<img class="card-thumb" src="images/menu4.jpg" alt="Chocolate Torte" />
+						<div class="card-body">
+							<h3>Chocolate Torte</h3>
+							<p class="muted">Dark chocolate ganache, vanilla cream.</p>
+						</div>
+						<div class="card-price">$9</div>
+						<button>Buy Now</button>
+					</article>
+
+					<article class="card" data-index="4">
+						<img class="card-thumb" src="images/menu5.jpg" alt="Marinated Olives" />
+						<div class="card-body">
+							<h3>Marinated Olives</h3>
+							<p class="muted">House blend, citrus and herbs.</p>
+						</div>
+						<div class="card-price">$6</div>
+						<button>Buy Now</button>
+					</article>
+
+					<article class="card" data-index="5">
+						<img class="card-thumb" src="images/menu6.jpg" alt="Grilled Octopus" />
+						<div class="card-body">
+							<h3>Grilled Octopus</h3>
+							<p class="muted">Smoky paprika, potato purée.</p>
+						</div>
+						<div class="card-price">$24</div>
+						<button>Buy Now</button>
+					</article>
+
+					<article class="card" data-index="6">
+						<img class="card-thumb" src="images/menu7.jpg" alt="Beet Salad" />
+						<div class="card-body">
+							<h3>Beet & Goat Cheese</h3>
+							<p class="muted">Roasted beets, arugula, pistachio.</p>
+						</div>
+						<div class="card-price">$12</div>
+						<button>Buy Now</button>
+					</article>
+
+					<article class="card" data-index="7">
+						<img class="card-thumb" src="images/menu8.jpg" alt="Pasta Primavera" />
+						<div class="card-body">
+							<h3>Pasta Primavera</h3>
+							<p class="muted">Market vegetables, parmesan.</p>
+						</div>
+						<div class="card-price">$17</div>
+						<button>Buy Now</button>
+					</article>
+
+					<article class="card" data-index="8">
+						<img class="card-thumb" src="images/menu9.jpg" alt="Ribeye Steak" />
+						<div class="card-body">
+							<h3>Ribeye Steak</h3>
+							<p class="muted">Char-grilled, rosemary butter.</p>
+						</div>
+						<div class="card-price">$28</div>
+						<button>Buy Now</button>
+					</article>
+
+					<article class="card" data-index="9">
+						<img class="card-thumb" src="images/menu10.jpg" alt="Shrimp Scampi" />
+						<div class="card-body">
+							<h3>Shrimp Scampi</h3>
+							<p class="muted">Garlic, white wine, lemon.</p>
+						</div>
+						<div class="card-price">$19</div>
+						<button>Buy Now</button>
+					</article>
+
+					<article class="card" data-index="10">
+						<img class="card-thumb" src="images/menu11.jpg" alt="Caprese" />
+						<div class="card-body">
+							<h3>Caprese</h3>
+							<p class="muted">Heirloom tomatoes, fresh mozzarella.</p>
+						</div>
+						<div class="card-price">$11</div>
+						<button>Buy Now</button>
+					</article>
+
+					<article class="card" data-index="11">
+						<img class="card-thumb" src="images/menu12.jpg" alt="Lamb Chops" />
+						<div class="card-body">
+							<h3>Lamb Chops</h3>
+							<p class="muted">Mint chimichurri, roasted roots.</p>
+						</div>
+						<div class="card-price">$30</div>
+						<button>Buy Now</button>
+					</article>
+
+					<article class="card" data-index="12">
+						<img class="card-thumb" src="images/menu13.jpg" alt="Mushroom Risotto" />
+						<div class="card-body">
+							<h3>Mushroom Risotto</h3>
+							<p class="muted">Creamy arborio, shaved truffle.</p>
+						</div>
+						<div class="card-price">$16</div>
+						<button>Buy Now</button>
+					</article>
+
+					<article class="card" data-index="13">
+						<img class="card-thumb" src="images/menu14.jpg" alt="Bruschetta" />
+						<div class="card-body">
+							<h3>Bruschetta</h3>
+							<p class="muted">Toasted bread, tomato, basil.</p>
+						</div>
+						<div class="card-price">$8</div>
+						<button>Buy Now</button>
+					</article>
+
+					<article class="card" data-index="14">
+						<img class="card-thumb" src="images/menu15.jpg" alt="Caesar Salad" />
+						<div class="card-body">
+							<h3>Caesar Salad</h3>
+							<p class="muted">Crisp romaine, anchovy dressing.</p>
+						</div>
+						<div class="card-price">$10</div>
+						<button>Buy Now</button>
+					</article>
+
+					<article class="card" data-index="15">
+						<img class="card-thumb" src="images/menu16.jpg" alt="Pizza Margherita" />
+						<div class="card-body">
+							<h3>Pizza Margherita</h3>
+							<p class="muted">San Marzano, basil, fior di latte.</p>
+						</div>
+						<div class="card-price">$14</div>
+						<button>Buy Now</button>
+					</article>
+
+					<article class="card" data-index="16">
+						<img class="card-thumb" src="images/menu17.jpg" alt="Clam Chowder" />
+						<div class="card-body">
+							<h3>Clam Chowder</h3>
+							<p class="muted">Creamy, bacon, potato.</p>
+						</div>
+						<div class="card-price">$12</div>
+						<button>Buy Now</button>
+					</article>
+
+					<article class="card" data-index="17">
+						<img class="card-thumb" src="images/menu18.jpg" alt="Grilled Vegetables" />
+						<div class="card-body">
+							<h3>Grilled Vegetables</h3>
+							<p class="muted">Seasonal veg, herb vinaigrette.</p>
+						</div>
+						<div class="card-price">$9</div>
+						<button>Buy Now</button>
+					</article>
+
+					<article class="card" data-index="18">
+						<img class="card-thumb" src="images/menu19.jpg" alt="Crème Brûlée" />
+						<div class="card-body">
+							<h3>Crème Brûlée</h3>
+							<p class="muted">Vanilla custard, caramelized sugar.</p>
+						</div>
+						<div class="card-price">$8</div>
+						<button>Buy Now</button>
+					</article>
+
+					<article class="card" data-index="19">
+						<img class="card-thumb" src="images/menu20.jpg" alt="Tiramisu" />
+						<div class="card-body">
+							<h3>Tiramisu</h3>
+							<p class="muted">Espresso-soaked ladyfingers, mascarpone.</p>
+						</div>
+						<div class="card-price">$9</div>
+						<button>Buy Now</button>
+					</article>
+				</div>
+			</section>
+
+			<section id="reservation" class="container reservation">
+				<h2>Reserve</h2>
+				<p class="muted">Call or email to reserve a table. We also accommodate small private events.</p>
+
+				<div class="reservation-inner">
+					<div class="reservation-info">
+						<p>To make a reservation please call or email. For parties of 6+, reservations are recommended in advance. A small deposit may be requested for parties of 8 or more.</p>
+
+						<div class="reserve-grid">
+							<div><strong>Hours</strong><div>Tue–Sun • 5pm–11pm</div></div>
+						</div>
+
+						<ul class="reservation-details">
+							<li><strong>Deposit:</strong> $20 per guest for large private reservations (refundable with 72hr notice).</li>
+							<li><strong>Cancellation:</strong> Please notify us 24 hours in advance for cancellations.</li>
+							<li><strong>Accessibility:</strong> Wheelchair accessible; let us know any dietary requirements.</li>
+						</ul>
+					</div>
+
+					<figure class="reservation-figure" aria-hidden="true">
+						<picture>
+							<source srcset="images/Reservation.jpeg" type="image/webp">
+							<source srcset="images/Reservation.jpeg" type="image/jpeg">
+							<img src="images/Reservation.jpeg" alt="Reservation scene" />
+						</picture>
+					</figure>
+				</div>
+			</section>
+
+			<section id="contact" class="container contact">
+				<h2>Contact & Location</h2>
+				<div class="contact-grid">
+					<div class="contact-info">
+						<div class="contact-item"><strong>Address</strong><span>123 Main Street, Hometown</span></div>
+						<div class="contact-item"><strong>Phone</strong><span><a href="tel:+1234567890">(123) 456-7890</a></span></div>
+						<div class="contact-item"><strong>Email</strong><span><a href="mailto:hello@labella.example">hello@labella.example</a></span></div>
+						<div class="contact-item"><strong>Hours</strong><span>Tue–Sun • 5pm–11pm</span></div>
+						<div class="contact-social" aria-label="Follow us">
+							<a class="social-link" href="#" aria-label="Instagram">
+								<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" stroke-width="1.2"/><path d="M16 11.999a4 4 0 1 1-8 0 4 4 0 0 1 8 0z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+							</a>
+							<a class="social-link" href="#" aria-label="Facebook">
+								<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M18 2h-3a4 4 0 0 0-4 4v2H8v3h3v7h3v-7h2.5l.5-3H14V6a1 1 0 0 1 1-1h3V2z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+							</a>
+							<a class="social-link" href="#" aria-label="Twitter">
+								<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43 1s-2 .75-3.54 1.02A4.48 4.48 0 0 0 12 4a12.8 12.8 0 0 1-9-4s-4 9 5 13a13 13 0 0 1-7 2c9 5 20 0 20-11.5A4.5 4.5 0 0 0 23 3z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+							</a>
+						</div>
+					</div>
+
+					<form id="contact-form" class="contact-form" novalidate>
+						<h2 class="contact-form-title">Contact Us</h2>
+						<h3>Send us a message</h3>
+						<div class="form-row">
+							<label for="name">Name</label>
+							<input id="name" name="name" type="text" required aria-required="true" />
+						</div>
+						<div class="form-row">
+							<label for="email">Email</label>
+							<input id="email" name="email" type="email" required aria-required="true" />
+						</div>
+						<div class="form-row">
+							<label for="phone">Phone (optional)</label>
+							<input id="phone" name="phone" type="tel" />
+						</div>
+						<div class="form-row">
+							<label for="message">Message</label>
+							<textarea id="message" name="message" rows="4" required aria-required="true"></textarea>
+						</div>
+						<div class="form-row form-actions">
+							<button type="submit" class="btn btn-primary">Send message</button>
+							<button type="reset" class="btn btn-link">Reset</button>
+						</div>
+						<div id="contact-status" role="status" aria-live="polite" class="contact-status"></div>
+					</form>
+				</div>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<div class="container footer-inner">
+				<div>© <span id="year"></span> La Bella</div>
+				<nav class="footer-nav"><a href="#">Privacy</a><a href="#">Jobs</a></nav>
+			</div>
+		</footer>
+
+		<script src="script.js"></script>
+		<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+	</body>
+	</html>
